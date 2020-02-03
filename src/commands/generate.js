@@ -13,11 +13,11 @@ module.exports = {
     const name = parameters.first
 
     await generate({
-      template: 'model.js.ejs',
-      target: `models/${name}-model.js`,
+      template: 'component.js.ejs',
+      target: `components/${name}.js`,
       props: { name },
     })
 
-    info(`Generated file at models/${name}-model.js`)
+    info(`Generated file at components/${name}.js`)
   },
 }
