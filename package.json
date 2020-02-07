@@ -1,7 +1,7 @@
 {
   "name": "thresh-cli",
-  "version": "0.0.2",
-  "description": "cli CLI",
+  "version": "0.0.3",
+  "description": "Thresh CLI",
   "bin": {
     "cli": "bin/cli"
   },
