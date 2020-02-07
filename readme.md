@@ -1,25 +1,9 @@
-# cli CLI
+<h2 align="center">CLI - Thresh</h2>
+<p align="center"><img width="100" src="https://gamepedia.cursecdn.com/lolesports_gamepedia_en/7/7b/ThreshSquare.png" alt="Thresh"></p>
+CLI
 
-A CLI for cli.
+### Run `npm install thresh-cli` or `npm i thresh-cli`
+To Install Thresh CLI
 
-## Customizing your CLI
-
-Check out the documentation at https://github.com/infinitered/gluegun/tree/master/docs.
-
-## Publishing to NPM
-
-To package your CLI up for NPM, do this:
-
-```shell
-$ npm login
-$ npm whoami
-$ npm lint
-$ npm test
-(if typescript, run `npm run build` here)
-$ npm publish
-```
-
-# License
-
-MIT - see LICENSE
+#### `cli generate NAME_COMPONENT`
 
