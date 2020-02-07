@@ -14,10 +14,10 @@ module.exports = {
 
     await generate({
       template: 'component.js.ejs',
-      target: `components/${name}.js`,
+      target: `src/${name}.js`,
       props: { name },
     })
 
-    info(`Generated file at components/${name}.js`)
+    info(`Generated file at src/${name}.js`)
   },
 }

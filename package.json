@@ -1,26 +1,20 @@
 {
-  "name": "cli",
+  "name": "thresh-cli",
   "version": "0.0.1",
   "description": "cli CLI",
-  "private": true,
-  
   "bin": {
     "cli": "bin/cli"
   },
   "scripts": {
-    
-      "format": "prettier --write **/*.{js,json} && standard --fix",
-      "lint": "standard",
-    
+    "format": "prettier --write **/*.{js,json} && standard --fix",
+    "lint": "standard",
     "test": "jest",
     "watch": "jest --watch",
     "snapupdate": "jest --updateSnapshot",
     "coverage": "jest --coverage"
   },
   "files": [
-    
-      "src",
-    
+    "src",
     "LICENSE",
     "readme.md",
     "docs",
@@ -31,25 +25,36 @@
     "gluegun": "latest"
   },
   "devDependencies": {
-    
-      "standard": "^12.0.1",
-    
+    "standard": "^12.0.1",
     "prettier": "^1.12.1",
     "jest": "^24.1.0"
   },
   "jest": {
-    
     "testEnvironment": "node"
   },
-  
   "standard": {
     "env": [
       "jest"
     ]
   },
-  
   "prettier": {
     "semi": false,
     "singleQuote": true
-  }
+  },
+  "main": "cli.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HenriqueFutema/CLI-Thresh.git"
+  },
+  "keywords": [
+    "threshjs"
+  ],
+  "author": "Henrique Futema",
+  "bugs": {
+    "url": "https://github.com/HenriqueFutema/CLI-Thresh/issues"
+  },
+  "homepage": "https://github.com/HenriqueFutema/CLI-Thresh#readme"
 }
