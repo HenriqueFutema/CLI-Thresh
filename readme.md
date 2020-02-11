@@ -5,5 +5,7 @@ CLI
 ### Run: `npm install thresh-cli` or `npm i thresh-cli`
 To Install Thresh CLI
 
+### `cli create-thresh-app`
+
 #### `cli generate NAME_COMPONENT`
 
