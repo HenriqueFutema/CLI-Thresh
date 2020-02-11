@@ -3,7 +3,6 @@ import render from 'thresh/vdom/render';
 import mount from 'thresh/vdom/mount';
 import diff from 'thresh/vdom/diff';
 
-//USER
 import manageState from 'thresh/state/manageState'
 
 manageState.createState('count', 0);
@@ -17,7 +16,6 @@ const createVApp = (state) => createElement('div', {
 });
 
 
-//DATA TEST
 let count = 0
 
 let vApp = createVApp(manageState.getState());

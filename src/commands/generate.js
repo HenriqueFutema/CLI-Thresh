@@ -1,7 +1,7 @@
   
 
 module.exports = {
-  name: 'generate',
+  name: 'create-thresh-app',
   alias: ['g'],
   run: async toolbox => {
     const {
@@ -14,10 +14,17 @@ module.exports = {
 
     await generate({
       template: 'component.js.ejs',
-      target: `src/${name}.js`,
+      target: `src/app.js`,
       props: { name },
     })
 
-    info(`Generated file at src/${name}.js`)
+    await generate({
+      template: 'index.js.ejs',
+      target: `public/index.html`,
+      props: { name },
+    })
+
+    info(`Generated Thresh app`)
+    info(`Edit file src/app.js`)
   },
 }
