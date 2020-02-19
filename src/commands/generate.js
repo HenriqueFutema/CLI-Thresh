@@ -14,13 +14,13 @@ module.exports = {
 
     await generate({
       template: 'component.js.ejs',
-      target: `src/app.js`,
+      target: `./src/app.js`,
       props: { name },
     })
 
     await generate({
       template: 'index.js.ejs',
-      target: `public/index.html`,
+      target: `./public/index.html`,
       props: { name },
     })
 
