@@ -24,6 +24,13 @@ module.exports = {
       props: { name },
     })
 
+    
+    await generate({
+      template: 'package.json.ejs',
+      target: `.`,
+      props: { name },
+    })
+
     info(`Generated Thresh app`)
     info(`Edit file src/app.js`)
   },
